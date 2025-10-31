@@ -1,0 +1,237 @@
+body {
+	font-family: 'Lato', Arial, sans-serif;
+	color: #818483;
+    font-size: 20px;
+    font-weight: bold;
+
+    /*position: relative;*/
+}
+
+header h1 {
+	margin: 0 auto;
+	padding: 29px 10px 0px;
+	text-align: center;
+    color: #5E5DF0;
+    font-weight: 1500;
+	font-size: 3em;
+	margin: 0 ;
+}
+
+.wrapper {
+	line-height: 1.5em;
+	margin: 0 auto;
+	padding: 2em 0 3em;
+	width: 90%;
+	max-width: 2000px;
+	overflow: hidden;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #fff;
+}
+
+th {
+    background-color: #5E5DF0;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+}
+
+td, th {
+    padding: 1em 1.5em;
+    text-align: left;
+}
+
+tbody th {
+	background-color: #2ea879;
+}
+tbody tr:nth-child(2n-1) {
+    background-color: #f5f5f5;
+    transition: all .125s ease-in-out;
+}
+tbody tr:hover {
+    background-color: rgba(50,98,149,.3);
+}
+
+td.rank {
+	text-transform: capitalize;
+}
+
+
+
+/* CSS button to refresh*/
+.button-refresh {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+.buttons button{
+    margin-bottom: 10px;
+}
+
+#button-submit{
+    margin-left: 38%;
+}
+
+#Oops{
+    opacity: 0.4;
+    margin-left: 40%;
+}
+
+#START{
+    margin-left: 13%;
+}
+
+#input-command {
+    visibility: hidden;
+}
+
+/* <select> styles */
+ select {
+	/* Reset */
+	 appearance: none;
+	 border: 0;
+	 outline: 0;
+	 font: inherit;
+	/* Personalize */
+	 width: 20em;
+	 height: 3em;
+	 padding: 0 4em 0 1em;
+     margin-top: 30px;
+     margin-left: 35px;
+     margin-right: 35px;
+	 background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg) no-repeat right 0.8em center / 1.4em, linear-gradient(to left, rgba(155, 155, 155, 0.3) 3em, rgba(155, 155, 155, 0.2) 3em);
+	 color: #5E5DF0;
+	 border-radius: 0.25em;
+	 box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
+	 cursor: pointer;
+	/* <option> colors */
+	/* Remove focus outline */
+	/* Remove IE arrow */
+}
+ select option {
+	 color: inherit;
+	 background-color: #5E5DF0;
+}
+ select:focus {
+	 outline: none;
+}
+ select::-ms-expand {
+	 display: none;
+}
+
+ #team-list {
+     width: 330px;
+ }
+
+ #task-number-list {
+     width: 145px;
+ }
+
+ #is-correct {
+     width: 175px;
+ }
+
+ #input-command {
+     text-align: center;
+ }
+
+
+
+tr.transition {
+    transition: transform ease-in 0.3s;
+}
+
+
+.container:first-child{
+     width: 70%; float: left;
+}
+
+
+.container:nth-child(2){
+
+    width: 20%; float: right;
+    margin-right: 7%;
+}
+
+.container{
+    overflow: hidden;
+}
+
+
+#safeTimerDisplay {
+    position: absolute;
+    font-weight: bold;
+    top: -20px;
+    left: 76%;
+    font-size: 50px;
+    color: #5E5DF0;
+}
+
+img {
+    margin: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+#faculty-logo {
+    height: 128px;
+    margin-top: 0;
+    margin-left: 3%;
+}
+
+
+/* Toast notification styles */
+#toast-container {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    z-index: 9999;
+    pointer-events: none;
+}
+.toast {
+    pointer-events: auto;
+    min-width: 180px;
+    max-width: 360px;
+    background: rgba(0,0,0,0.85);
+    color: #fff;
+    padding: 0.6rem 0.9rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    font-size: 0.95rem;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 220ms ease, transform 220ms ease;
+}
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.toast.hide {
+    opacity: 0;
+    transform: translateY(8px);
+}
+

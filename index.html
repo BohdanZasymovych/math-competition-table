@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APPS Competition</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="%20icon.svg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+<header>
+      <h1>Math Competition</h1>
+</header>
+
+<div class="container">
+    <div class="wrapper">
+        <table>
+            <thead>
+            <tr>
+                <th>Task</th>
+                <th>Points</th>
+            </tr>
+            </thead>
+            <tbody id="task-points">
+                <!-- Task points are added in Javascript -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Input Buttons -->
+    <div class="buttons">
+        <button id="Oops" class="button-refresh" type="submit" onclick="cancelPrevSubmission()">Oops</button><br>
+        <button class="button-refresh" id="button-submit" type="submit" onclick="button_is_pressed()">Submit</button>
+        <button id="START" class="button-refresh" type="submit" onclick="START_COMPETITION()">Start a Math Competition!</button><br>
+    </div>
+
+    <!-- Input Fields -->
+    <div id="input-command">
+        <select name="team" id="submission-team-list">
+            <!-- Team names are added in Javascript -->
+        </select>
+
+        <select name="task-number" id="submission-task-number-list">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+
+        <select name="is-correct" id="is-correct">
+            <option value="0">Wrong</option>
+            <option value="1">Correct!</option>
+        </select>
+
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Team</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            
+            <tbody id="there-are-teams-here">
+                <!-- Team names are added in Javascript -->
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<img id="faculty-logo" src="./%20icon.svg" alt="">
+
+<p id="safeTimerDisplay">
+            1:00:00
+</p>
+
+
+<script src="timer.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+
+<!-- Toast container for short popup messages -->
+<div id="toast-container" aria-live="polite" aria-atomic="true"></div>
